@@ -8,7 +8,7 @@ pipeline{
         stage('Git checkout'){
             steps{
                 git(
-                    url:'//github.com/Dhruv-274/MlOps1.git',
+                    url:'https://github.com/Dhruv-274/MlOps1.git',
                     branch: 'master'
                 )
             }
