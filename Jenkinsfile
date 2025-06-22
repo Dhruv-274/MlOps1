@@ -2,7 +2,7 @@ pipeline{
     agent any
     environment{
         dockerhubCred= credentials('docker-cred')
-        dockerImage= 'mlops:latest'
+        dockerImage= 'dhruvrs/mlops:latest'
     }
     stages{
         stage('Git checkout'){
