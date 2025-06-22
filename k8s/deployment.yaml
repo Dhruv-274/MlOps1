@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mlopstest-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mlopstest-app
+  template:
+    metadata:
+      labels:
+        app: mlopstest-app
+    spec: 
+      containers:
+        - name: mlopstest-app
+          image: dhruvrs/mlops:latest
+          ports:
+            - containerPort: 8090
